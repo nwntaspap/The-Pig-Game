@@ -139,7 +139,7 @@ body {
 
 /* Section description */
 .section-description {
-  padding: 3.2rem 0;
+  padding: 3.2rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
