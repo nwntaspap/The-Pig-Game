@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>The Pig Game</title>
+  </head>
+  <body>
+    <div class="container">
+    <main class="main-container">
+      <section class="section-description">
+        <h1 class="heading-primary">The Pig Game</h1>
+
+        <div class="header-box">
+          <h2 class="heading-secondary">Instructions</h2>
+          <svg class="icon svg-icon center-icon">
+            <use xlink:href="img/sprite.svg#icon-open-book"></use>
+          </svg>
+        </div>
+        <div class="paragraph">
+          <p class="paragraph-text">
+            Pig is a simple 2 player dice game. Each player must achieve
+            100 points to win. Players can hold their points in order to win.
+            If a player rolls 1  he loses turn and  current points. Good luck!
+          </p>
+          <svg class="icon svg-icon">
+            <use xlink:href="img/sprite.svg#icon-emoji-flirt"></use>
+          </svg>
+        </div>
+        <div class="btn-box">
+          <button class="btn btn--new">🔄 New game</button>
+        </div>
+      </section>
+      <section class="section-players">
+        <div class="player-box">
+          <div class="player player--0 player--active">
+            <h2 class="name" id="name--0">Player 1</h2>
+            <p class="score" id="score--0">43</p>
+            <div class="current">
+              <p class="current-label">Current</p>
+              <p class="current-score" id="current--0">0</p>
+            </div>
+          </div>
+          <button class="btn btn--roll">🎲 Roll dice</button>
+        </div>
+        
+        <div class="player-box">
+        <div class="player player--1">
+          <h2 class="name" id="name--1">Player 2</h2>
+          <p class="score" id="score--1">24</p>
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="current--1">0</p>
+          </div>
+        </div>
+        <button class="btn btn--hold">📥 Hold</button>
+      </div>
+
+      </section>
+
+      <img src="img/dice-5.png" alt="Playing dice" class="dice" />
+
+    </main>
+    <footer class="footer">
+      <div class="footer-text-box">
+        <p class="footer-text">
+       Made with 💜 by <span class="author">Nwntas Papamichael</span>
+       <p class="credits">My version of the Pig Game project from Jonas Schmedtmann course:</p>
+       <a href="https://www.udemy.com/course/the-complete-javascript-course/" class="teachers-link">The Complete JavaScript Course 2020: From Zero to Expert!</a>
+      </div>
+     <ul class="socials-box">
+      <li class="socials-box-item">
+        <a href="https://www.facebook.com/nwntas.papamichael/?locale=el_GR" target="_blank" class="socials-box-link">
+          <svg class="icon svg-icon">
+            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-box-item">
+        <a href="https://www.instagram.com/nwntas_papamichael/?next=%2F" target="_blank" class="socials-box-link">
+          <svg class="icon svg-icon">
+            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials-box-item">
+        <a href="https://github.com/nwntaspap" target="_blank" class="socials-box-link">
+          <svg class="icon svg-icon">
+            <use xlink:href="img/sprite.svg#icon-github"></use>
+          </svg>
+        </a>
+      </li>
+     </ul>
+      </p>
+    </footer>
+  </div>
+    <script src="index.js"></script>
+  </body>
+</html>
